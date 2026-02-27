@@ -19,7 +19,7 @@ const Home = () => {
       {/* Learning Begins Section */}
       <section className="py-16 sm:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
-          <motion.h2 
+          <motion.h2
             className="text-3xl sm:text-4xl font-bold text-brand-text-main"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ const Home = () => {
           >
             Learning Begins With Us
           </motion.h2>
-          <motion.p 
+          <motion.p
             className="mt-6 text-base sm:text-lg leading-relaxed text-brand-text-muted"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -70,9 +70,9 @@ const Home = () => {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.7 }}
             >
-              <img 
-                src="https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://s3-alpha-sig.figma.com/img/dcf9/9395/8f08fa5c8ad170ed6720be566eeaba3e?Expires=1763942400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=RApem5vlgaG4ScUmacj03uuyS0HHI0ltiL~1CVygmI~-dYi1W3NOFQlHTFiOgK7tSBU530YF3PizVZHDx1AhyIervF3KqJ3Hna3zJxDoqkwIY0NcQbIGl4~oGttCp5j442jHz-8TAhn3igp-QzOvwxmkRo3x3cyJ9zaXoi29amOZMKVRHxZTv-RKUPQZwVirIPBoCaKC2rN-CF59RWZ63A7JKk8gF7Hy0vxMThaMmsKWn~PKE~EH00PhdRpSUH047EdXtkxE~bg2Ponj8~xIqIJ8Z19TelgMZ1oG2ot2NPt4dHkSe6jQjg7G0gkwhBgGpESELjxfrv~tpo24EyDvGw__" 
-                alt="Smiling pharmacy students working together" 
+              <img
+                src="/image/pharmacy.png"
+                alt="Smiling pharmacy students working together"
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
             </motion.div>
@@ -89,7 +89,7 @@ const Home = () => {
               Explore the programs we offer to shape your future in the pharmaceutical world.
             </p>
           </div>
-          <motion.div 
+          <motion.div
             className="max-w-3xl mx-auto bg-brand-primary-light border border-gray-200 rounded-xl p-8 shadow-lg"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -8,7 +8,20 @@ const courseDetails = {
   features: [
     { icon: Clock, label: 'Duration', value: '2 Years' },
     { icon: UserCheck, label: 'Eligibility', value: '10+2 with Science (PCB/PCM)' },
-    { icon: Award, label: 'Affiliation', value: 'Approved by PCI & Affiliate to State Medical Faculty of West Bengal' },
+    { 
+      icon: Award, 
+      label: 'Affiliation', 
+      value: (
+        <a 
+          href="/Affi_DISHARI%20INSTITUTE%20OF%20PHARMACY.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-brand-primary hover:underline transition-colors"
+        >
+          Approved by PCI & Affiliate to State Medical Faculty of West Bengal
+        </a>
+      ) 
+    },
   ],
   careerProspects: [
     'Community Pharmacist',
@@ -22,7 +35,7 @@ const courseDetails = {
 const Course = () => {
   return (
     <div className="bg-white">
-      <motion.div 
+      <motion.div
         className="bg-brand-primary-light"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -37,7 +50,7 @@ const Course = () => {
       </motion.div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        <motion.div 
+        <motion.div
           className="bg-white border border-gray-200 rounded-2xl shadow-xl overflow-hidden"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,14 +87,14 @@ const Course = () => {
               ))}
             </div>
           </div>
-          
+
           <div className="bg-brand-primary-light/50 px-8 py-6 text-center">
-             <Link to="/contact">
-                <button className="bg-brand-primary hover:bg-brand-primary-dark text-white font-bold py-3 px-8 rounded-lg flex items-center gap-2 transition-all duration-300 transform hover:scale-105 mx-auto">
-                  Apply Now
-                  <ArrowRight className="h-5 w-5" />
-                </button>
-              </Link>
+            <Link to="/contact">
+              <button className="bg-brand-primary hover:bg-brand-primary-dark text-white font-bold py-3 px-8 rounded-lg flex items-center gap-2 transition-all duration-300 transform hover:scale-105 mx-auto">
+                Apply Now
+                <ArrowRight className="h-5 w-5" />
+              </button>
+            </Link>
           </div>
         </motion.div>
       </div>
