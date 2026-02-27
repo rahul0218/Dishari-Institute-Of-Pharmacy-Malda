@@ -8,7 +8,7 @@ const courseDetails = {
   features: [
     { icon: Clock, label: 'Duration', value: '2 Years' },
     { icon: UserCheck, label: 'Eligibility', value: '10+2 with Science (PCB/PCM)' },
-    { icon: Award, label: 'Affiliation', value: 'Approved by PCI & Affiliated to WBSCT&VE&SD' },
+    { icon: Award, label: 'Affiliation', value: 'Approved by PCI & Affiliate to State Medical Faculty of West Bengal' },
   ],
   careerProspects: [
     'Community Pharmacist',

@@ -4,12 +4,14 @@ import { Calendar, FileText } from 'lucide-react';
 const notices = [
   {
     id: 1,
-    title: 'Commencement of D.Pharma Classes for Session 2025-26',
-    date: 'August 01, 2025',
-    description: 'This is to inform all newly admitted students that the classes for the Diploma in Pharmacy (D.Pharma) program for the academic session 2025-26 will commence on Monday, August 15, 2025.',
-    link: '#',
+    title: 'Amission notice for D-Pharma',
+    date: 'January 01, 2026',
+    description: 'This is to inform all students Diploma in Pharmacy (D.Pharma) go through notice to know more.',
+    // public folder assets are served from the root, so the PDF can be referenced directly by its
+    // path under /Notice. This corresponds to public/Notice/Admission Notice Pharmacy.pdf
+    link: '/Notice/Admission Notice Pharmacy.pdf',
   },
-  {
+  /*{
     id: 2,
     title: 'Schedule for Mid-Term Examinations (1st Year)',
     date: 'July 25, 2025',
@@ -29,7 +31,7 @@ const notices = [
     date: 'July 15, 2025',
     description: 'The institute will remain closed on August 15, 2025, on account of Independence Day. The flag hoisting ceremony will be held at 9:00 AM.',
     link: '#',
-  },
+  },*/
 ];
 
 const containerVariants = {
@@ -97,6 +99,8 @@ const Notice = () => {
               <div className="bg-gray-50 px-6 py-4">
                 <a
                   href={notice.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 font-semibold text-brand-primary hover:text-brand-primary-dark transition-colors"
                 >
                   <FileText className="h-5 w-5" />
